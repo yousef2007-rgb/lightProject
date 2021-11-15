@@ -1,0 +1,54 @@
+//tablet mode
+@media (max-width:768px) {
+    .travelParagraph1{
+        flex-direction: column;
+        div{
+            width: 100%;
+        }
+    }
+}
+//desktop mode
+@media (min-width:768px) {
+    .travelParagraph1{
+        flex-direction: row;
+        div{
+            width: 48%;
+        }
+    }
+    
+}
+.TravelContainer{
+    padding-top: 40px;
+}
+.travelParagraph1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+
+}
+.travelInformation{
+
+}
+.travelImage{
+    img{
+        border-radius: 15px;
+        width:  100%;
+    }
+}
+.travelParagraph2{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-top: 25px;
+
+}
+.travelInformation2{
+
+}
+.travelImage2   {
+    img{
+        border-radius: 15px;
+        width:  100%;
+    }
+}
