@@ -6,12 +6,12 @@ export default function footer() {
         <div className="FooterContainer">
             
             
-            <a href="https://www.facebook.com/yousef.a.radi.1" target="_blank">@Yousef Abu Radi</a>
+            
+            <a href="https://github.com/hamzalegend" target="_blank">HamzaAbdelal</a>   
             <a href="https://github.com/yousef2007-rgb" target="_blank">yousef2007-rgb</a>
-            <a href="#" className="Logo"><img src={logo} width="35"/></a>
-            <a href="https://www.facebook.com/hamza.abdelal.503" target="_blank">@Hamza Abdelal</a>    
-            <a href="https://github.com/hamzalegend" target="_blank">HamzaAbdelal</a>    
-
+            <a href="#" className="Logo"><img src={logo} width="35"/></a>   
+            <a href="https://github.com/yousef2007-rgb/lightProject" target="blank">Code</a>
+            <a>Email:light.project@yahoo.com</a>
             
         </div>
     )
