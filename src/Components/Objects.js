@@ -1,14 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../Styles/Objects.css'
+import objectsImage from '../Images/Objects-image.jpeg'
+import simulatorThumnail from '../Images/thumnail.jpg'
+import close from '../Images/icon-close.svg'
 export default function Objects() {
+    const [display2, setDisplay2] = useState("dontshowSim");
     return (
         <div id="ObjectsContainer">
+            <div className="objectInformation">
+            <div>
             <h1>What Happens When Light strikes objects?</h1>
-            <p>When light strikes an object, the light can be reflected, or bounced off the object. The light might also be absorbed, or taken in by the object.
-            Or the light can be transmitted, or passed through the object. Objects that you cannot see through, such as wood and metal, are called opaque. When light strikes an opaque object, the light is either reflected or absorbed. You cannot see through an opaque object because light cannot pass through it. A glass object is transparent. When light strikes it, the light is allowed to pass through. As a result, you can see through the glass object.
-            Other objects are translucent. When light strikes them, only some light passes through. When you look through a translucent object, you can see something behind it, but you cannot see the details clearly.
+            <p>
+            The material that objects are made of affects the way light behaves when it hits them.
             </p>
-            <iframe src="https://adoring-goldwasser-5ef0d7.netlify.app" width="100%" height="700" frameborder="0" allowfullscreen></iframe>
+            <ul>
+                <li><b>Transparent</b> materials are see-through and they let light travel through them.</li>
+                <li>If you can only see a glow of light through a material and not a full ray of light, the material is <b>translucent</b>.</li>
+                <li><b>Opaque</b> objects do not let light any travel through them.</li>
+            </ul>
+            <p>
+                Glass is an example of a transparent object, Wood or metal is opaque.
+                and you can see that with <a href="#"onClick={()=> setDisplay2("showSim")}><b style={{color:'rgb(251, 176, 59)'}}>this game</b></a> 
+            </p>
+            </div>
+            <div>
+            <img src={objectsImage} />
+            </div>
+            </div>
+            
+              
+            <div id={display2}>
+            <div className="simulator">
+            <a onClick={()=>setDisplay2("dontshowSim")} href="#"><img src={close}/></a>
+            <iframe src="https://light-reflection-simulator.netlify.app/" width="1000" height="600" frameborder="0"  scrolling="no"></iframe>
+            </div>
+            </div>
         </div>
     )
 }

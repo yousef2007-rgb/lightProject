@@ -1,4 +1,101 @@
 #ObjectsContainer {
   padding-top: 40px;
 }
+@media (max-width: 768px) {
+  .objectInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .objectInformation div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .objectInformation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .objectInformation div {
+    width: 48%;
+  }
+
+}
+
+.objectInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.objectInformation img {
+  border-radius: 15px;
+  width: 100%;
+}
+.simulatorThumnail{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+.simulatorThumnail img{
+}
+
+#showSim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content:center;        
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0px;
+  left: 0px;    
+  background: rgba(0,0,0,.60);
+  padding:20px;
+  align-items:center;
+}
+
+#showSim a{
+  margin-left:auto;
+}
+.simulator{
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position:fixed;
+  animation-name: render;
+  animation-duration: 0.5s;
+}
+
+
+#dontshowSim {
+  display: none;
+}
+.objectInformation a{
+  text-decoration:underline solid rgb(251, 176, 59);
+  text-transform:uppercase;
+}
+@keyframes render {
+  from {transform:scale(0.1)}
+  to {transform:scale(1)}
+}
+
+/*# sourceMappingURL=colors.css.map */
 /*# sourceMappingURL=Objects.css.map */

@@ -1,0 +1,22 @@
+
+  
+  .FooterContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 2px solid #5a5a5a;
+    position: -webkit-sticky;
+    justify-content:space-between;  
+    background-color: white;
+  }
+  
+  .FooterContainer a {
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  /*# sourceMappingURL=Header.css.map */
